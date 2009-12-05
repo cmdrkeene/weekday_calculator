@@ -14,12 +14,16 @@ Make sure gemcutter.org is one of your gem sources, then run:
 
 Values returned are Date instances.
 
-nth weekday from a date:
+### nth weekday from a date
+
+3 weekdays from now:
 
     date = Date.parse("Jan 1, 2009")
     WeekdayCalculator.nth_weekday(3, date) #=> Jan 6, 2009
     
-Every nth weekday:
+### Every nth weekday
+
+Every 5th weekday between two dates:
     
     start  = Date.parse("Jan 1, 2009")
     finish = Date.parse("Jan 20, 2009")
